@@ -1,0 +1,179 @@
+body{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	 background-color: 	#FAEBD7;
+	 font-size: 16px;
+}
+.main{
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.launchbutton{
+	height: 50px;
+	width:20vw;
+	box-sizing: border-box;
+	background-color: #20B2AA;
+	border-radius: 5px;
+	text-align:center;
+	
+	font-size: 1.4rem;
+	padding:10px;
+}
+
+.launchbutton a{
+	text-decoration:none;
+	color: black;
+}
+
+
+.container{
+	width: 70vw;
+	display: flex;
+	align-items: center;
+	
+	justify-content: center;
+
+}
+.modal{
+	width:50vw;
+
+	height:210px;
+	position: relative;
+	border:solid 1px black;
+	border-radius: 5px;
+	animation-name: example;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+   
+    
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+   
+    100% { left:0px; top:80px;}
+}
+
+.modalheader{
+	width:50vw;
+	height:70px;
+	border-bottom: solid 1px grey;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.title{
+	box-sizing: border-box;
+	width:25vw;
+	font-weight: bold;
+	padding-left:1vw;
+}
+.cross{
+	box-sizing: border-box;
+	width: 25vw;
+	text-align: right;
+	padding-right: 1vw;
+	padding-top: 20px;
+	color:grey;
+	
+
+	
+}
+
+.modalbody{
+	box-sizing: border-box;
+	width:50vw;
+	height:70px;
+	padding-top:5px;
+	font-size: 1.4rem;
+	border-bottom:solid 1px grey;
+}
+.modalfooter{
+	width:50vw;
+	height:70px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.close{
+	height: 50px;
+	width:10vw;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	background-color: grey;
+	border-radius: 5px;
+	text-align: center;
+	margin: 10px;
+	font-size: 1.4rem;
+	padding:10px;
+}
+.close a{
+	text-decoration:none;
+	color:black;
+}
+
+.save{
+	height: 50px;
+	width:10vw;
+	justify-content: flex-end;
+	box-sizing: border-box;
+	background-color: #20B2AA;
+	border-radius: 5px;
+	text-align: center;
+	margin: 10px;
+	font-size: 20px;
+	padding:10px;
+}
+
+.save a{
+	text-decoration:none;
+	color:black;
+}
+
+@media screen and (max-width: 650px){
+
+.launchbutton{
+
+	width:30vw;
+	font-size:1.3rem; 
+}
+
+	.close{
+	width:15vw;
+}
+
+
+.save{
+	width:15vw;
+}
+
+.modalbody{
+	font-size:1.5rem;
+}
+
+}
+
+@media screen and (min-width:200px) and (max-width:450px){
+
+	.close{
+	width:20vw;
+	margin:2px;
+	padding:2px;
+}
+
+
+.save{
+	width:20vw;
+	margin:2px;
+	padding:2px;
+}
+.modalbody{
+	font-size:1.1rem;
+}	
+}
